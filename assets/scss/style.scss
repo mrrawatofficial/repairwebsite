@@ -1,0 +1,62 @@
+// @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+
+@font-face {
+	font-family: "Segoe UI Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Segoe UI Regular"), url("../font/SegoeUI.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Segoe UI Bold";
+	font-style: normal;
+	font-weight: bold;
+	src: local("Segoe UI Bold"), url("../font/SegoeUIBold.woff") format("woff");
+}
+
+@import "./variables";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $regularFont;
+}
+@import "./general";
+
+//=================navbar================
+@import "./navbar";
+
+//=================navbar================
+@import "./banner";
+
+//=================services================
+@import "./services";
+
+//=================whyus================
+@import "./whyus";
+
+//=================how it works================
+@import "./howitworks";
+
+//=================how it works================
+@import "./contact";
+
+//=================testimonials================
+@import "./testimonials";
+
+//=================testimonials================
+@import "./newsletter";
+
+//================about==================
+@import "./about";
+
+//==================chatbot===============
+@import "./chatbot";
+
+//==================footer===============
+@import "./footer";
+
+//==================footer===============
+@import "./responsive";

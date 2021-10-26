@@ -1,0 +1,47 @@
+.contact {
+	background: linear-gradient(90deg, rgba($dark, 0.2), rgba($white, 1) 50%),
+		url(../img/bg/contact.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	// margin-top: 150px;
+	form {
+		padding: 15px;
+		background-color: $white;
+		box-shadow: 0 2px 20px rgba($black, 0.2);
+		border-radius: 10px;
+		margin-left: -150px;
+		margin-right: 110px;
+		h3 {
+			text-transform: uppercase;
+			color: $primary;
+			margin-bottom: 15px;
+		}
+		p {
+			color: $gray;
+		}
+		.form-group {
+			margin-block: 15px;
+		}
+	}
+}
+
+.contact-page {
+	h3 {
+		font-size: 40px;
+		text-transform: capitalize;
+		color: $primary;
+		font-weight: bold;
+	}
+	form {
+		padding: 20px;
+		position: relative;
+		margin-bottom: -100px;
+		background-color: $white;
+		border-radius: 7px;
+		box-shadow: 0 2px 20px 1px rgba($black, 0.2);
+		z-index: 1;
+		.form-group {
+			margin-block: 15px;
+		}
+	}
+}

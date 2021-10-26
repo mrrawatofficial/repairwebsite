@@ -1,0 +1,300 @@
+@media only screen and (max-width: 1200px) {
+	.navbar {
+		.header-top {
+			h6,
+			span {
+				text-align: center;
+				font-size: 14px;
+			}
+		}
+	}
+	.services {
+		.box {
+			.box-bottom {
+				h3 {
+					font-size: 1rem;
+				}
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.how-it-works {
+		.box {
+			h3 {
+				font-size: 20px;
+			}
+		}
+	}
+	.whyus {
+		.title {
+			span:nth-child(2) {
+				div {
+					line-height: 0.9;
+				}
+			}
+		}
+	}
+	.contact {
+		form {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.navbar {
+		.header-top {
+			padding-bottom: 0;
+		}
+		.container {
+			position: unset;
+			.header-bottom {
+				position: unset;
+				padding: 0;
+				background-color: transparent;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				flex-direction: column;
+				box-shadow: none;
+				transform: translateX(0);
+				.navbar-nav {
+					.dropdown-menu {
+						div {
+							display: none;
+						}
+					}
+					padding-left: 50px;
+					margin-right: auto !important;
+					margin-left: 0 !important;
+					align-items: flex-start;
+					.nav-item {
+						.nav-link {
+							color: $white;
+						}
+					}
+				}
+			}
+			.navbar-toggler {
+				position: fixed;
+				right: 10px !important;
+				z-index: 10;
+				display: flex;
+				flex-direction: column;
+				border: 2px solid $white;
+				border-radius: 50%;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				background: transparent;
+				padding: 8px 0 4px 2px !important;
+				& span {
+					width: 1.25rem;
+					height: 0.125rem;
+					background-color: $white;
+					display: inline-block;
+					transition-duration: 0.2s;
+					transform-origin: left;
+					&:first-child {
+						transform: rotate(45deg) translateX(-0.1875rem)
+							translateY(-0.4375rem);
+					}
+					&:nth-child(2) {
+						opacity: 0;
+					}
+					&:last-child {
+						transform: rotate(-45deg) translateX(-0.0625rem)
+							translateY(0.1875rem);
+					}
+				}
+				&.collapsed {
+					border: 2px solid transparent;
+					span {
+						width: 1.25rem;
+						height: 0.125rem;
+						background-color: $white;
+						display: inline-block;
+						transition-duration: 0.5s;
+						transform-origin: left;
+						&:first-child {
+							transform: rotate(0) translateX(0rem);
+						}
+						&:nth-child(2) {
+							opacity: 1;
+							margin: 0.3125rem 0;
+						}
+						&:last-child {
+							transform: rotate(0) translateX(0);
+						}
+					}
+				}
+			}
+			.navbar-collapse {
+				height: 100vh;
+				position: fixed;
+				top: 0rem;
+				left: auto;
+				right: -100%;
+				width: 50%;
+				transition: right 0.2s ease-in-out;
+				display: block;
+				background-color: rgba($primary, 1) !important;
+				// backdrop-filter: blur(0.625rem);
+				padding: 6.25rem 1.125rem;
+				box-shadow: -2px 0 5px rgba($dark, 1);
+				&.show {
+					left: auto;
+					right: 0;
+				}
+			}
+			.navbar-toggler {
+				&:focus {
+					box-shadow: none;
+				}
+			}
+		}
+	}
+	.breadcrumb {
+		background-size: cover;
+		h2 {
+			font-size: 36px;
+		}
+	}
+	.banner {
+		.item {
+			h1,
+			span {
+				font-size: 40px !important;
+			}
+		}
+	}
+	.breadcrumb,
+	.banner,
+	.service-banner {
+		padding-top: 75px;
+	}
+	.about {
+		img {
+			margin-bottom: 30px;
+		}
+	}
+
+	.whyus {
+		.title {
+			margin-top: 30px;
+			span:nth-child(2) div:nth-child(1) {
+				font-size: 38px;
+			}
+		}
+	}
+	.how-it-works {
+		.box {
+			position: unset;
+			margin-bottom: 15px;
+		}
+	}
+	.contact {
+		margin-top: 0;
+		background: transparent;
+	}
+	.orde-2 {
+		order: 2;
+	}
+	.orde-3 {
+		order: 3;
+	}
+	.orde-4 {
+		order: 4;
+	}
+	.services-page {
+		a {
+			// margin-inline-end: auto;
+			margin-block-end: 15px;
+		}
+	}
+}
+@media only screen and (max-width: 600px) {
+	.navbar {
+		.container {
+			.navbar-collapse {
+				width: 100%;
+			}
+			.header-bottom {
+				.navbar-nav {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+	.banner {
+		.item {
+			min-height: 290px;
+			h1 {
+				font-size: 35px;
+			}
+		}
+	}
+	.devider {
+		display: none;
+	}
+	.sec-title {
+		h2 {
+			font-size: 1.7rem;
+		}
+	}
+}
+@media only screen and (max-width: 300px) {
+	h3 {
+		font-size: 20px;
+	}
+	.sec-title {
+		h2 {
+			font-size: 20px;
+		}
+	}
+	.banner {
+		.item {
+			h1 {
+				font-size: 25px;
+			}
+			p {
+				font-size: 13px;
+			}
+		}
+	}
+
+	.whyus {
+		.title {
+			span:nth-child(1) {
+				font-size: 40px;
+			}
+			span:nth-child(2) div {
+				font-size: 25px;
+				&:nth-child(1) {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+	.banner,
+	.breadcrumb,
+	.service-banner {
+		margin-top: 95px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+}

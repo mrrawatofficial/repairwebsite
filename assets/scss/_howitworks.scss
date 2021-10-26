@@ -1,0 +1,42 @@
+.how-it-works {
+	background: linear-gradient(45deg, rgba($primary, 0.8), rgba($primary, 0.8)),
+		url(../img/bg/how-it-works.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	// overflow: visible;
+	.sec-title {
+		h2 {
+			color: $white;
+		}
+		p {
+			color: rgba($white, 0.8);
+		}
+	}
+	.col-lg-2 {
+		position: relative;
+	}
+	.box {
+		position: absolute;
+		box-shadow: 0 2px 5px rgba($black, 0.2);
+		z-index: 1;
+		bottom: -150px;
+		left: 0;
+		width: 100%;
+		background-color: $white;
+		padding: 15px;
+		text-align: center;
+		border-radius: 10px;
+		img {
+			width: 80px;
+			margin-bottom: 15px;
+			height: 80px;
+			object-fit: contain;
+		}
+		h3 {
+			text-transform: capitalize;
+			color: $primary;
+			font-size: 23px;
+		}
+	}
+}

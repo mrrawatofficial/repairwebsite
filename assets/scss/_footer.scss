@@ -1,0 +1,91 @@
+footer {
+	position: relative;
+	// background-color: $black;
+	padding: $secpadding 0 1.25rem;
+	z-index: 5;
+	background: linear-gradient(90deg, rgba($primary, 0.9), rgba($primary, 0.9)),
+		url(../img/bg/footer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	img {
+		width: 130px;
+	}
+	h3 {
+		color: $white;
+	}
+	ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+			a {
+				color: rgba($white, 0.8);
+				text-decoration: none;
+				font-weight: 500;
+				font-size: 0.875rem;
+				letter-spacing: 0.0625rem;
+				padding: 0.3125rem 0;
+				display: block;
+				transition-duration: 0.3s;
+				&:hover {
+					color: $white;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+
+	p {
+		color: rgba($white, 0.8);
+		font-size: 1rem;
+	}
+	form {
+		.form-control {
+			&:focus {
+				box-shadow: none !important;
+			}
+		}
+		.btn-custom {
+			color: $white;
+			font-size: 1rem;
+			letter-spacing: 0.0625rem;
+		}
+	}
+	.line {
+		width: 100%;
+		height: 0.0625rem;
+		background-color: rgba($primary, 0.5);
+		margin: 1.25rem 0;
+	}
+	h5 {
+		color: rgba($white, 0.6);
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: rgba($white, 0.6);
+			&:hover {
+				// color: $primary;
+				color: rgba($white, 1);
+			}
+		}
+	}
+	.form-control {
+		&:focus {
+			border: 0.125rem solid $white !important;
+		}
+	}
+}
+
+// #contact-modal {
+// 	.modal-dialog {
+// 		transition: transform 1s;
+// 		transform: translateX(200%) !important;
+// 	}
+// }
+// #contact-modal.show {
+// 	.modal-dialog {
+// 		transition: transform 0.5s;
+// 		transform: translateX(0rem) !important;
+// 	}
+// }

@@ -1,0 +1,53 @@
+.banner {
+	// background: linear-gradient(45deg, rgba($white, 0.5), rgba($dark, 0.5)),
+	// 	url(../img/banner/home-banner.png);
+	// background-size: cover;
+	// background-position: right;
+	// background-repeat: no-repeat;
+	// min-height: 450px;
+	padding: 0;
+	.item {
+		display: flex;
+		align-items: center;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		min-height: 450px;
+		// margin-bottom: 50px;
+		background: linear-gradient(45deg, rgba($white, 0.5), rgba($dark, 0.5));
+		img {
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+		}
+		h1 {
+			font-size: 50px;
+			text-transform: capitalize;
+			color: $white;
+			span {
+				// font-weight: bold;
+				color: $primary;
+				font-size: 60px;
+				font-weight: bold;
+				// background: $primary;
+				// color: $white;
+				// padding: 0 15px 0 10px;
+				// line-height: 1.5;
+				// border-radius: 5px;
+			}
+		}
+		.btn-custom {
+			background-color: $primary;
+			border: 2px solid $white;
+			color: $white;
+		}
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

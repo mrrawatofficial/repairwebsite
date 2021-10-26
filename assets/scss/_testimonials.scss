@@ -1,0 +1,19 @@
+.testimonials {
+	// background-image: url(../img/bg/testimonials.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	.box {
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+		blockquote {
+			font-size: 22px;
+			color: $primary;
+			font-family: $boldFont;
+			font-weight: bold;
+		}
+	}
+}
